@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\KirdevServer.Domain\KirdevServer.Domain.csproj" />
+    <ProjectReference Include="..\KirdevServer.Infrastructure\KirdevServer.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
