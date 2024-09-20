@@ -8,7 +8,7 @@ namespace KirdevServer.Services.Mapper
     {
         public User ToDomain(UserDto dto)
         {
-            return User.Create(dto.Id, dto.Username, dto.Email, dto.PasswordHash, dto.Birthday, dto.Registrered);
+            return User.Create(dto.Id, dto.Username, dto.Email, dto.PasswordHash, dto.Birthday, dto.Registrered, dto.Role);
         }
 
         public UserDto ToDto(User domain)
