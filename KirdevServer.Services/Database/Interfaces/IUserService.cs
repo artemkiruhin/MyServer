@@ -1,14 +1,14 @@
-﻿using KirdevServer.Services.Database.Base;
+﻿using KirdevServer.Domain.Helpers;
 using KirdevServer.Services.Dtos.User;
 
 namespace KirdevServer.Services.Database.Interfaces
 {
-    public interface IUserService
+    public interface IUserService 
     {
-        Task AddAsync(UserAddDto user, );
-        Task UpdateAsync(UserUpdateDto user);
-        Task DeleteAsync(Guid id);
-        Task<T> GetByIdAsync(Guid id);
-        Task<IEnumerable<T>> GetAllAsync();
+        Task AddAsync(UserAddDto user, Roles role);
+        Task UpdateAsync(UserUpdateDto user, Roles role);
+        Task DeleteAsync(Guid id, Roles role);
+        Task<UserDto> GetByIdAsync(Guid id, Roles role);
+        Task<IEnumerable<UserDto>> GetAllAsync(Roles role);
     }
 }
