@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KirdevServer.MVC", "KirdevServer.MVC\KirdevServer.MVC.csproj", "{35883EDB-027F-42A0-8005-77611BDC5532}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KirdevServer.Domain", "KirdevServer.Domain\KirdevServer.Domain.csproj", "{1C84D4B8-35FD-4F31-80EA-A956B05C4BE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KirdevServer.Infrastructure", "KirdevServer.Infrastructure\KirdevServer.Infrastructure.csproj", "{33E9DFD0-F40A-4F73-AC8B-57237B84E2C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KirdevServer.Services", "KirdevServer.Services\KirdevServer.Services.csproj", "{97474B21-650C-484E-B61C-13320614A256}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KirdevServer.API", "KirdevServer.API\KirdevServer.API.csproj", "{41FFF200-D278-4952-AD4E-047CFE219A49}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35883EDB-027F-42A0-8005-77611BDC5532}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35883EDB-027F-42A0-8005-77611BDC5532}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35883EDB-027F-42A0-8005-77611BDC5532}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35883EDB-027F-42A0-8005-77611BDC5532}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C84D4B8-35FD-4F31-80EA-A956B05C4BE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C84D4B8-35FD-4F31-80EA-A956B05C4BE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C84D4B8-35FD-4F31-80EA-A956B05C4BE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C84D4B8-35FD-4F31-80EA-A956B05C4BE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33E9DFD0-F40A-4F73-AC8B-57237B84E2C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33E9DFD0-F40A-4F73-AC8B-57237B84E2C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33E9DFD0-F40A-4F73-AC8B-57237B84E2C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33E9DFD0-F40A-4F73-AC8B-57237B84E2C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97474B21-650C-484E-B61C-13320614A256}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97474B21-650C-484E-B61C-13320614A256}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97474B21-650C-484E-B61C-13320614A256}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97474B21-650C-484E-B61C-13320614A256}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41FFF200-D278-4952-AD4E-047CFE219A49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41FFF200-D278-4952-AD4E-047CFE219A49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41FFF200-D278-4952-AD4E-047CFE219A49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41FFF200-D278-4952-AD4E-047CFE219A49}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B2D2CC5-B623-4CCD-9192-46C85A33DA17}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,6 @@
+@KirdevServer.API_HostAddress = http://localhost:5201
+
+GET {{KirdevServer.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
