@@ -1,4 +1,6 @@
-﻿namespace KirdevServer.Domain.Models
+﻿using KirdevServer.Domain.Helpers;
+
+namespace KirdevServer.Domain.Models
 {
     public class User
     {
@@ -8,9 +10,9 @@
         public string PasswordHash { get; set; } = string.Empty;
         public DateOnly Birthday { get; set; } = DateOnly.MinValue;
         public DateTime Registred { get; set; } = DateTime.Now;
-        public
+        public Roles Role { get; set; } = Roles.USER;
 
-        private User(Guid id, string username, string email, string passwordHash, DateOnly birthday, DateTime registered)
+        private User(Guid id, string username, string email, string passwordHash, DateOnly birthday, DateTime registered, Roles role)
         {
             Id = id;
             Username = username;
@@ -18,11 +20,12 @@
             PasswordHash = passwordHash;
             Birthday = birthday;
             Registred = registered;
+            Role = role;
         }
 
-        public static User Create(Guid id, string username, string email, string passwordHash, DateOnly birthday, DateTime registered)
+        public static User Create(Guid id, string username, string email, string passwordHash, DateOnly birthday, DateTime registered, Roles role)
         {
-            return new User(id, username, email, passwordHash, birthday, registered);
+            return new User(id, username, email, passwordHash, birthday, registered, role);
         }
     }
 }
