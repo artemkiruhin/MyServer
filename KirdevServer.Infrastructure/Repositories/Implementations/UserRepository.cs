@@ -1,4 +1,4 @@
-﻿using 
+﻿using KirdevServer.Domain.Models;
 using KirdevServer.Infrastructure.Database;
 using KirdevServer.Infrastructure.Repositories.Base;
 using KirdevServer.Infrastructure.Repositories.Interfaces;
