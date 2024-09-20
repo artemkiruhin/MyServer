@@ -29,8 +29,10 @@ namespace KirdevServer.Domain.Models
         }
         public static User Create(Guid id, string username, string email, string passwordHash, DateOnly birthday, DateTime registered, string role)
         {
-            if (role.Equals(R)) {
-            return new User(id, username, email, passwordHash, birthday, registered, role);
+            Roles userRole = Roles.USER;
+            if (role.Equals(RolesHelper.ADMIN)) userRole = Roles.ADMIN;
+
+            return new User(id, username, email, passwordHash, birthday, registered, userRole);
         }
     }
 }
