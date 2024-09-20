@@ -27,5 +27,10 @@ namespace KirdevServer.Domain.Models
         {
             return new User(id, username, email, passwordHash, birthday, registered, role);
         }
+        public static User Create(Guid id, string username, string email, string passwordHash, DateOnly birthday, DateTime registered, string role)
+        {
+            if (role.)
+            return new User(id, username, email, passwordHash, birthday, registered, role);
+        }
     }
 }
