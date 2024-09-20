@@ -1,4 +1,5 @@
-﻿using KirdevServer.Domain.Models;
+﻿using KirdevServer.Domain.Helpers;
+using KirdevServer.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace KirdevServer.Infrastructure.Database
@@ -21,6 +22,7 @@ namespace KirdevServer.Infrastructure.Database
                 entity.Property(e => e.Email).HasMaxLength(50);
                 entity.Property(e => e.Birthday).IsRequired();
                 entity.Property(e => e.Registred).IsRequired();
+                entity.Property(e => e.Role).IsRequired().HasDefaultValue(Roles.USER);
             });
         }
     }

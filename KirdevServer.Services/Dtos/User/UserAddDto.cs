@@ -7,6 +7,6 @@
         public string PasswordHash { get; set; } = string.Empty;
         public DateOnly Birthday { get; set; } = DateOnly.MinValue;
         public DateTime Registrered { get; set; } = DateTime.Now;
+
     }
-}
 }
