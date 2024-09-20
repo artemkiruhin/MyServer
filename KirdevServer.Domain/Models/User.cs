@@ -7,21 +7,21 @@
         public string Email { get; set; } = string.Empty;
         public string PasswordHash { get; set; } = string.Empty;
         public DateOnly Birthday { get; set; } = DateOnly.MinValue;
-        public DateTime Registrered { get; set; } = DateTime.Now;
+        public DateTime Registred { get; set; } = DateTime.Now;
 
-        private User(Guid id, string username, string email, string passwordHash, DateOnly birthday)
+        private User(Guid id, string username, string email, string passwordHash, DateOnly birthday, DateTime registered)
         {
             Id = id;
             Username = username;
             Email = email;
             PasswordHash = passwordHash;
             Birthday = birthday;
-            Registered = DateTime.Now;
+            Registred = registered;
         }
 
-        public static User Create(Guid id, string username, string email, string passwordHash, DateOnly birthday)
+        public static User Create(Guid id, string username, string email, string passwordHash, DateOnly birthday, DateTime registered)
         {
-            return new User(id, username, email, passwordHash, birthday);
+            return new User(id, username, email, passwordHash, birthday, registered);
         }
     }
 }

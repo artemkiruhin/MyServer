@@ -8,7 +8,7 @@ namespace KirdevServer.Services.Mapper
     {
         public User ToDomain(UserDto dto)
         {
-            throw new NotImplementedException();
+            User.Create(dto.Id, dto.Username, dto.PasswordHash, dto.Birthday, dto.Registrered);
         }
 
         public UserDto ToDto(User domain)
