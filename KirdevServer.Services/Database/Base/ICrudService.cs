@@ -1,11 +1,13 @@
-﻿namespace KirdevServer.Services.Database.Base
+﻿using KirdevServer.Domain.Helpers;
+
+namespace KirdevServer.Services.Database.Base
 {
     public interface ICrudService<T> where T : class
     {
-        Task AddAsync(T entity);
-        Task UpdateAsync(T entity);
-        Task DeleteAsync(T entity);
-        Task<T> GetByIdAsync(Guid id);
-        Task<IEnumerable<T>> GetAllAsync();
+        Task AddAsync(T entity, Roles role);
+        Task UpdateAsync(T entity, Roles role);
+        Task DeleteAsync(T entity, Roles role);
+        Task<T> GetByIdAsync(Guid id, Roles role);
+        Task<IEnumerable<T>> GetAllAsync(Roles role);
     }
 }
