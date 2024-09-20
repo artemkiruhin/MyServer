@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace KirdevServer.Services.Dtos.User
+﻿namespace KirdevServer.Services.Dtos.User
 {
     public class UserAddDto
     {
