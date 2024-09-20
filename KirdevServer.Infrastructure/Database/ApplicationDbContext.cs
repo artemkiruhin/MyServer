@@ -20,7 +20,7 @@ namespace KirdevServer.Infrastructure.Database
                 entity.Property(e => e.PasswordHash).IsRequired();
                 entity.Property(e => e.Email).HasMaxLength(50);
                 entity.Property(e => e.Birthday).IsRequired();
-                entity.Property(e => e.Registrered).IsRequired();
+                entity.Property(e => e.Registred).IsRequired();
             });
         }
     }
