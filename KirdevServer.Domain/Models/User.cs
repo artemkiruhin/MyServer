@@ -8,6 +8,7 @@
         public string PasswordHash { get; set; } = string.Empty;
         public DateOnly Birthday { get; set; } = DateOnly.MinValue;
         public DateTime Registred { get; set; } = DateTime.Now;
+        public
 
         private User(Guid id, string username, string email, string passwordHash, DateOnly birthday, DateTime registered)
         {
