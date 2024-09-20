@@ -1,6 +1,7 @@
 ﻿using KirdevServer.Domain.Models;
+using KirdevServer.Services.Database.Interfaces;
 
-namespace KirdevServer.Services.Database.Interfaces
+namespace KirdevServer.Services.Database
 {
     public class UserService : IUserService
     {
