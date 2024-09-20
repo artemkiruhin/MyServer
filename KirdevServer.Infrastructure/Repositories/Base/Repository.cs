@@ -8,10 +8,10 @@ namespace KirdevServer.Infrastructure.Repositories.Base
         private readonly ApplicationDbContext _context;
         private readonly DbSet<T> _dbSet;
             
-        public Repository(ApplicationDbContext context, DbSet<T> dbSet)
+        public Repository(ApplicationDbContext context)
         {
             _context = context;
-            _dbSet = dbSet;
+            _dbSet = _context.Set<T>();
         }
 
         public async Task AddAsync(T entity)
