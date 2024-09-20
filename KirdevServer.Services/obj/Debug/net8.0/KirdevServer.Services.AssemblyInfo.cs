@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KirdevServer.Services")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35f5ea1e76cee0dc93dfe883c073fe2c724a79d6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7068a2eb1e1cee4e51409a5266e630c8d705bb7a")]
 [assembly: System.Reflection.AssemblyProductAttribute("KirdevServer.Services")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KirdevServer.Services")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
