@@ -8,12 +8,20 @@ namespace KirdevServer.Services.Mapper
     {
         public User ToDomain(UserDto dto)
         {
-            User.Create(dto.Id, dto.Username, dto.PasswordHash, dto.Birthday, dto.Registrered);
+            return User.Create(dto.Id, dto.Username, dto.Email, dto.PasswordHash, dto.Birthday, dto.Registrered);
         }
 
         public UserDto ToDto(User domain)
         {
-            throw new NotImplementedException();
+            return new UserDto()
+            {
+                Id = domain.Id,
+                Username = domain.Username,
+                Email = domain.Email,
+                PasswordHash = domain.PasswordHash,
+                Birthday = domain.Birthday,
+                Registrered = domain.Registred
+            };
         }
     }
 }
